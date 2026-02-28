@@ -90,7 +90,7 @@ export interface Home extends BasePageConfig {
    *
    * The image needs to be put inside `/public/images/` directory
    */
-  image: `/images/${string}` | string;
+  // image: `/images/${string}` | string;
   /** The headline of the home page */
   headline: React.ReactNode;
   /** Featured badge, which appears above the headline */
@@ -209,6 +209,37 @@ export interface About extends BasePageConfig {
       }>;
     }>;
   };
+
+  certification: {
+    /** Whether to display technical skills section */
+    display: boolean;
+    /** Title for the technical skills section */
+    title: string;
+    /** List of technical skills */
+    cert: Array<{
+      /** Skill title */
+      title: string;
+      /** Skill description */
+      description?: React.ReactNode;
+      /** Skill tags */
+      tags?: Array<{
+        name: string;
+        icon?: string;
+      }>;
+      /** Images related to the skill */
+      images?: Array<{
+        /** Image source path */
+        src: string;
+        /** Image alt text */
+        alt: string;
+        /** Image width ratio */
+        width: number;
+        /** Image height ratio */
+        height: number;
+      }>;
+    }>;
+  };
+
 }
 
 /**
@@ -221,12 +252,17 @@ export interface Blog extends BasePageConfig {}
  * Work/projects page configuration.
  * @description Configuration for the Work/Projects page, including metadata and navigation label.
  */
-export interface Work extends BasePageConfig {}
+export interface ProjectItem {
+  display?: boolean;
+  title: string;
+  description: string;
+  content?: React.ReactNode;
+}
+export interface Projects extends BasePageConfig {
+  display?: boolean;
+  projects?: ProjectItem[];
+}
 
-/**
- * Gallery page configuration.
- * @description Configuration for the Gallery page, including metadata, navigation label, and image list.
- */
 export interface Gallery extends BasePageConfig {
   /** List of images in the gallery */
   images: Array<{

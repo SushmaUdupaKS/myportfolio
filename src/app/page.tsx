@@ -108,7 +108,7 @@ export default function Home() {
           <Row fillWidth paddingRight="64">
             <Line maxWidth={48} />
           </Row>
-          <Row fillWidth gap="24" marginTop="40" s={{ direction: "column" }}>
+          {/* <Row fillWidth gap="24" marginTop="40" s={{ direction: "column" }}>
             <Row flex={1} paddingLeft="l" paddingTop="24">
               <Heading as="h2" variant="display-strong-xs" wrap="balance">
                 Latest from the blog
@@ -117,7 +117,7 @@ export default function Home() {
             <Row flex={3} paddingX="20">
               <Posts range={[1, 2]} columns="2" />
             </Row>
-          </Row>
+          </Row> */}
           <Row fillWidth paddingLeft="64" horizontal="end">
             <Line maxWidth={48} />
           </Row>

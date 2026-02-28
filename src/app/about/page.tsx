@@ -35,6 +35,11 @@ export default function About() {
       items: [],
     },
     {
+      title: about.certification.title,
+      display: about.intro.display,
+      items: [],
+    },
+    {
       title: about.work.title,
       display: about.work.display,
       items: about.work.experiences.map((experience) => experience.company),
@@ -201,6 +206,32 @@ export default function About() {
               {about.intro.description}
             </Column>
           )}
+
+           {about.certification?.display && (
+            <>
+              <Heading
+                as="h2"
+                id={about.certification.title}
+                variant="display-strong-s"
+                marginBottom="m"
+              >
+                {about.certification.title}
+              </Heading>
+
+              <Column fillWidth gap="l" marginBottom="40">
+                {about.certification.cert.map((cert, index) => (
+                  <Column key={index} fillWidth gap="4">
+                    <Text variant="heading-strong-l">{cert.title}</Text>
+                    <Text variant="body-default-m" onBackground="neutral-weak">
+                      {cert.description}
+                    </Text>
+                  </Column>
+                ))}
+              </Column>
+            </>
+          )}
+ 
+
 
           {about.work.display && (
             <>
