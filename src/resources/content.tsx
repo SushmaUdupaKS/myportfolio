@@ -31,7 +31,7 @@ const social: Social = [
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/sushma-udupa-k-s",
     essential: true,
   },
   // {
@@ -56,7 +56,7 @@ const social: Social = [
 
 const home: Home = {
   path: "/",
-  // image: "/images/og/home.jpg",
+  // image: "/images/profile.jpg",
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
@@ -65,10 +65,10 @@ const home: Home = {
     display: false,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
+        <strong className="ml-4">Download Resume</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
-          Featured work
+          Download Power BI Dashboard
         </Text>
       </Row>
     ),
