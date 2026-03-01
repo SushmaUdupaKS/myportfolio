@@ -3,7 +3,7 @@ export default function Head() {
     <>
       <title>Sushma Udupa KS | Portfolio</title>
       <meta name="description" content="Portfolio website showcasing my work as IAM & Data Analyst" />
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/favicon-v2.ico" />
     </>
   );
 }
