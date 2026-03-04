@@ -287,6 +287,18 @@ const about: About = {
           
         ],
       },
+      {
+        title: "Power BI",
+        description: (
+          <>Developed dashboards by transforming raw data into meaningful visual reports for better data understanding and presentation.</>
+        ),
+        tags: [
+
+        ],
+        images: [
+          
+        ],
+      },
     ],
   },
 
