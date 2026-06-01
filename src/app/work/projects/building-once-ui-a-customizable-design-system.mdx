@@ -1,7 +1,7 @@
 ---
 title: "Privileged Access Review Automation"
-publishedAt: "2026-02-09"
-summary: "Automated privileged account reporting to reduce manual effort and ensure audit compliance."
+publishedAt: "2026-04-09"
+summary: "Built a Python and SQL-based automation workflow to streamline privileged access reviews using Snowflake data. The solution automated data extraction, transformation, and audit metric generation, and produced standardized Excel reports for compliance teams. This reduced manual review effort by 60%, improved data accuracy, and enabled faster, reliable, and audit-ready reporting through repeatable automation pipelines."
 
 team:
   - name: "Sushma Udupa KS"
@@ -11,33 +11,34 @@ team:
 
 ## Overview
 
-Developed Python automation and SQL workflows to perform privileged
-            access reviews and generate audit-ready Excel reports.
+Built an end-to-end automation workflow using Python and SQL to modernize privileged access reviews and generate audit-ready Excel reports. The solution reduced manual effort by 60%, replacing time-consuming manual processes with a scalable and reliable data pipeline that improved efficiency, consistency, and audit readiness.
+
 ## Process Flow
 
-- Extracted login and access data securely from Snowflake
-- Executed optimized SQL queries for audit metrics
-- Processed datasets using Pandas
-- Used snowflake-connector-python for secure connectivity
+- Securely extracted login and access data from Snowflake
+- Executed optimized SQL queries to compute audit and compliance metrics
+- Processed and transformed datasets using Python (Pandas)
+- Established secure database connectivity using snowflake-connector-python
+- Generated standardized Excel reports for audit and compliance teams
 
 ## Technologies Used
 
-- **Python**: For automation, data processing, workflow scripting
-- **Pandas**: For data cleaning, transformation, and analysis
-- **SQL**: For data querying and audit metric extraction
-- **Snowflake**: For cloud data warehouse for secure data retrieval
-- **snowflake-connector-python**: For secure database connectivity
-- **Excel (OpenPyXL / XlsxWriter)**: For audit-ready report generation
+- Python — Automation, workflow scripting, and data processing
+- Pandas — Data cleaning, transformation, and analysis
+- SQL (Snowflake) — Data extraction and audit metric computation
+- Snowflake — Cloud data warehouse for secure data storage and retrieval
+- snowflake-connector-python — Secure database connectivity
+- Excel (OpenPyXL / XlsxWriter) — Automated audit-ready report generation
 
 ## Challenges and Learnings
 
-- Handling large datasets extracted from Snowflake efficiently without performance issues
-- Ensuring secure database connectivity and credential management
-- Cleaning inconsistent access data formats before analysis
-- Optimizing SQL queries to reduce execution time and improve data retrieval speed
+- Efficiently handling large-scale datasets extracted from Snowflake
+- Ensuring secure credential management and database connectivity
+- Cleaning inconsistent and unstructured access data formats
+- Optimizing SQL queries to improve execution speed and performance
 
 ## Outcome
 
-- Automated privileged access review process, reducing manual effort by 60% and improving reporting efficiency
-- Generated consistent, audit-ready Excel reports with standardized data validation
-- Enabled faster audit support through reliable and repeatable workflows.
+- Reduced manual effort in privileged access reviews by 60%
+- Automated generation of consistent, audit-ready Excel reports with validation checks
+- Improved audit readiness through faster, repeatable, and reliable workflows

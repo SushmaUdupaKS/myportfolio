@@ -4,7 +4,7 @@ import { Line, Row, Text } from "@once-ui-system/core";
 const person: Person = {
   firstName: "Sushma",
   lastName: "Udupa KS",
-  name: `Kushi Udupa KS`,
+  name: `Sushma Udupa KS`,
   role: "IAM Analyst | Data Analyst",
   avatar: "/images/profile.jpg",
   email: "sushmaudupa05@gmail.com",
@@ -60,7 +60,7 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Showcasing Skills. Sharing Stories. Shaping Opportunities.</>,
+  headline: <>Transforming Data into Insights, Automation, and Business Impact</>,
   featured: {
     display: false,
     title: (
@@ -76,7 +76,7 @@ const home: Home = {
   },
   subline: (
     <>
-    I’m Sushma, a data and automation enthusiast, blending IAM expertise with analytics. After work, I tinker with Python scripts and small automation projects.
+    I’m Sushma, a data and automation enthusiast blending IAM expertise with analytics. I enjoy building Python-based automation solutions and exploring innovative ways to improve processes.
 </>
   ),
 };
@@ -102,13 +102,17 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Analytical and detail-oriented professional with 2 years of experience
-        across Identity & Access Management (IAM) and Data Analytics in the
-        banking domain. Proven expertise in Python automation, Excel-based
-        reporting, and Snowflake SQL to streamline manual workflows and ensure
-        compliance. Recognized as a Peak Performer (2025) for driving automation
-        initiatives, improving operational efficiency, and delivering data-driven
-        insights that support business decisions.
+        Results-driven Data Analyst with 2+ years of 
+        experience spanning Identity & Access Management (IAM),
+        data analytics, and process automation. Skilled in Python, 
+        SQL (Snowflake), and Power BI to uncover insights, 
+        detect anomalies, and streamline compliance workflows, 
+        reducing manual effort by 60%. Recognized as a Peak Performer (2025) 
+        at Accenture for delivering measurable impact in fraud 
+        detection and operational efficiency. Passionate about 
+        leveraging data and automation to build secure, efficient, 
+        and scalable digital solutions.
+
       </>
     ),
   },
@@ -136,21 +140,26 @@ const about: About = {
     experiences: [
     {
         company: "Accenture",
-        timeframe: "2024 - Present",
+        timeframe: "Feb 2024 - Present",
         role: "Security Services Managed Analyst | Data Analyst",
         achievements: [
           <>
-            Led a Privileged Access Review Automation project that identified
-            unused accounts, triggered user notifications, and initiated access
-            revocations — reducing manual review effort by 60%.
+            <h3>Privileged Access Review Automation</h3>
+            Designed and implemented an automated review process that identified 
+            inactive privileged accounts, triggered user notifications, and initiated 
+            access revocations, reducing manual effort by 60% and strengthening access governance.
           </>,
           <>
-            Automated report generation using Python, enabling end-to-end data
-            extraction, processing, and formatted Excel output creation.
+            <h3>Automated Reporting Framework</h3>
+            Built Python-based automation to extract, process, 
+            and transform data into standardized Excel reports, 
+            significantly reducing report preparation time and manual intervention.
           </>,
           <>
-          Developed a Python utility to compare large Excel datasets,
-          enhancing accuracy in access validation and audit reporting.
+          <h3>Excel Dataset Validation Tool</h3>
+          Developed a Python utility to compare and 
+          validate large Excel datasets, improving audit accuracy, 
+          accelerating access verification, and minimizing human error.
           </>,
         ],
         images: [],
@@ -158,21 +167,23 @@ const about: About = {
 
       {
         company: "Accenture",
-        timeframe: "2024 - Present",
+        timeframe: "Feb 2024 - May 2024",
         role: "Security Services Managed Analyst | IAM Analyst",
         achievements: [
           <>
-            Managed ServiceNow requests for provisioning, modification, and
-            deprovisioning of user access across client-specific and Swift
-            applications.
+            Administered user access lifecycle management for critical 
+            banking and client applications, handling provisioning, 
+            modifications, and deprovisioning through ServiceNow.
           </>,
           <>
-            Resolved user and application team access issues promptly, ensuring
-            compliance with internal security policies and audit standards.
+            Partnered with users, application owners, and support teams 
+            to troubleshoot and resolve access-related issues, ensuring 
+            secure and uninterrupted business operations.
           </>,
           <>
-          Performed end-to-end IAM BAU activities, maintaining detailed audit
-          documentation and evidence for periodic compliance reviews.
+          Supported Identity and Access Management governance by conducting 
+          access reviews, maintaining audit-ready documentation, and ensuring 
+          compliance with internal controls and regulatory requirements.
           </>
         ],
         images: [
@@ -209,7 +220,7 @@ const about: About = {
       {
         title: "Automation",
         description: (
-          <>Built scripts and workflows to generate reports, send notifications, and optimize daily processes - reduced manual efforts by 60%</>
+          <>Designed and implemented automation solutions for reporting, email notifications, and operational workflows, reducing manual effort by 60% and improving process efficiency.</>
         ),
         tags: [
           {
@@ -241,7 +252,7 @@ const about: About = {
       {
         title: "Python",
         description: (
-          <>Used for automating repetitive tasks, processing data, and generating Excel reports efficiently.</>
+          <>Developed scripts for data processing, workflow automation, report generation, and Excel-based solutions to streamline repetitive tasks.</>
         ),
         tags: [
           
@@ -253,7 +264,7 @@ const about: About = {
       {
         title: "SQL & Snowflake",
         description: (
-          <>Extracted and queried data, performed optimization for reporting and analysis.</>
+          <>Queried, transformed, and analyzed large datasets to support reporting, compliance reviews, and data-driven decision-making.</>
         ),
         tags: [
           
@@ -265,7 +276,7 @@ const about: About = {
       {
         title: "Excel",
         description: (
-          <>Applied for data validation, formatting, and comparison to ensure accurate reporting.</>
+          <>Utilized advanced Excel techniques for data validation, reconciliation, reporting, and audit support to ensure data accuracy and consistency.</>
         ),
         tags: [
 
@@ -278,7 +289,7 @@ const about: About = {
       {
         title: "ServiceNow",
         description: (
-          <>Managed user access by provisioning, modifying, and deprovisioning accounts, and resolving user queries.</>
+          <>Managed end-to-end user access lifecycle activities, including provisioning, modifications, deprovisioning, and access-related issue resolution.</>
         ),
         tags: [
 
@@ -290,7 +301,7 @@ const about: About = {
       {
         title: "Power BI",
         description: (
-          <>Developed dashboards by transforming raw data into meaningful visual reports for better data understanding and presentation.</>
+          <>Created interactive dashboards and visual reports, transforming raw data into actionable insights for stakeholders and business teams.</>
         ),
         tags: [
 
