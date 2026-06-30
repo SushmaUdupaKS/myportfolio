@@ -1,17 +1,21 @@
 import "@once-ui-system/core/css/styles.css";
 import "@once-ui-system/core/css/tokens.css";
 import "@/resources/custom.css";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 import classNames from "classnames";
-import Head from "next/head"; // ✅ Added
+import Head from "next/head";
 
 import {
   Background,
   Column,
   Flex,
   Meta,
-  opacity,
   RevealFx,
+} from "@once-ui-system/core";
+
+import type {
+  opacity,
   SpacingToken,
 } from "@once-ui-system/core";
 import { Footer, Header, RouteGuard, Providers } from "@/components";
@@ -114,6 +118,7 @@ export default async function RootLayout({
             <Footer />
           </Column>
         </Providers>
+        <GoogleAnalytics gaId="G-1CBPQSPP4M" />
       </Flex>
     </>
   );
